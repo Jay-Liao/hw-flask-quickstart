@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route("/<string:num1>/<string:num2>")
-def hello_world(num1, num2):
+def multiple(num1, num2):
     try:
         return f"{int(num1) * int(num2)}", HTTPStatus.OK
     except:
